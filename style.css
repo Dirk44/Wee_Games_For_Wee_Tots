@@ -1,0 +1,93 @@
+.farm-animals {
+    background-image: url("./images/lv-492_1024x1024.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.home-page {
+    background-image: url("./images/forest.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.colors-page {
+    background-image: url("./images/rainbow.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.shapes-page {
+    background-image: url("./images/wintery.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+    font-size: 70px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: indianred;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+    font-size: 40px;
+    color: rgb(21, 19, 141);
+    margin-top: 0px; 
+}
+
+.colors {
+    justify-content: center;
+}
+
+.farm {
+    justify-content: center;
+}
+
+.games {
+    margin-top: 15%;
+}
+
+.btn {
+    /* position: absolute; */
+    font-family: 'Sniglet', cursive;
+    color: gold;
+    font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    background: transparent;
+    border: none;
+    transition: .3s ease;
+}
+
+ .btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+} 
+
+#start-btn {
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+/* .home-btn {
+    flex: start;
+    margin-left: 10px;
+    margin-top: 50px;
+} */
+
+.color {
+    -webkit-filter: drop-shadow(5px 5px 5px #353434);
+        filter: drop-shadow(5px 5px 5px #353434);
+}
