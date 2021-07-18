@@ -30,25 +30,29 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: 'Concert One', cursive;
-    font-size: 70px;
+    font-size: 70px; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    color: indianred;
+    color: red;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
-h3 {
+h2 {
     display: flex;
     justify-content: center;
     font-family: 'Concert One', cursive;
-    font-size: 40px;
+    font-size: 70px;
     color: rgb(21, 19, 141);
     margin-top: 0px; 
 }
 
-.colors {
-    justify-content: center;
+.col-md-4 {
+    text-align: center;
+}
+
+.hide {
+    display: none;
 }
 
 .farm {
@@ -77,18 +81,28 @@ h3 {
     color: red
 } 
 
-#start-btn {
-    margin-top: 100px;
-    padding-top: 50px;
+.button {
+    margin-top: 45%;
 }
 
-/* .home-btn {
-    flex: start;
-    margin-left: 10px;
-    margin-top: 50px;
-} */
+#start-btn {
+    justify-content: center;
+   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
 
 .color {
     -webkit-filter: drop-shadow(5px 5px 5px #353434);
         filter: drop-shadow(5px 5px 5px #353434);
+}
+
+.row-1 {
+
+}
+
+.row-2 {
+    margin-top: 10%;
 }
