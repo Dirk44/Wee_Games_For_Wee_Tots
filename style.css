@@ -47,6 +47,15 @@ h2 {
     margin-top: 0px; 
 }
 
+.wrong {
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive;
+    font-size: 70px;
+    color: rgb(21, 19, 141);
+    margin-top: 0px; 
+}
+
 .col-md-4 {
     text-align: center;
 }
