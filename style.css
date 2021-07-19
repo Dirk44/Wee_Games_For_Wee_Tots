@@ -52,7 +52,7 @@ h2 {
     justify-content: center;
     font-family: 'Concert One', cursive;
     font-size: 70px;
-    color: rgb(21, 19, 141);
+    color: red;
     margin-top: 0px; 
 }
 
@@ -106,10 +106,6 @@ h2 {
 .color {
     -webkit-filter: drop-shadow(5px 5px 5px #353434);
         filter: drop-shadow(5px 5px 5px #353434);
-}
-
-.row-1 {
-
 }
 
 .row-2 {

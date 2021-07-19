@@ -11,7 +11,7 @@ const incorrect = document.getElementById("incorrect");
 let startBtn = document.getElementById("start-btn");
 let colorsGame = document.getElementById("colors-game");
 let randomInstruction;
-randomInstructionIndex = 0;
+let randomInstructionIndex = 0;
 let instructionDiv = document.getElementById("instruction");
 
 
@@ -81,6 +81,7 @@ function nextInstruction() {
 };
 
 function showInstruction(instructions) {
+    console.log(instructions);
     instructionDiv.innerHTML = instructions.instruction;
 };
 
@@ -92,51 +93,46 @@ function hidePrompt() {
 /* events */
 
 startBtn.addEventListener("click", () => {
+    randomInstructionIndex = 0;
     startGame();
-    showInstruction();
+    // showInstruction();
 });
 
 /* clicking on a color*/
 
 colorsGame.addEventListener("click", (e) => {
     console.log(e.target);
-    
-        /* correct answer */
+
+    /* correct answer */
     if (instructions[randomInstructionIndex].correct === e.target) {
         instructionDiv.innerHTML = "Correct!";
-        
+
         console.log("correct!");
+        randomInstructionIndex = randomInstructionIndex + 1
 
         /* wrong answer */
     } else {
         incorrect.classList.remove("hide");
-        randomInstructionIndex = randomInstructionIndex - 1
-        clearTimeout(nextInstruction() , instructionDiv.classList.add("hide"));
+        // randomInstructionIndex = randomInstructionIndex - 1
+        clearTimeout(nextInstruction(), instructionDiv.classList.add("hide"));
     }
 
-    randomInstructionIndex = randomInstructionIndex + 1
     if (randomInstructionIndex >= 8) {
         instructionDiv.innerHTML = "Correct! You touched all of the colors!"
+        setTimeout(function () {
+            colorsGame.classList.add("hide");
+            startBtn.classList.remove("hide")
+            document.getElementById("start-btn").innerHTML = "Play Again";
+
+        }, 3000)
 
     } else {
-        setTimeout(function() {
+        setTimeout(function () {
             incorrect.classList.add("hide");
-            instructionDiv.classList.remove("hide")
+            instructionDiv.classList.remove("hide");
             nextInstruction();
-        },3000)
-        
+        }, 1000)
+
     };
 });
 
-// document.querySelectorAll('.colors').forEach(item => {
-//     colorsGame.addEventListener('click', (e) => {
-//       //handle click
-//       if (instructions[randomInstructionIndex].correct === e.target.id) {
-//         instructionDiv.innerHTML = "Correct!";
-//         console.log(e.target);
-//     }
-
-//     else {instructionDiv.innerHTML = "Sorry, try again.";
-// };
-//     })
-//   });
