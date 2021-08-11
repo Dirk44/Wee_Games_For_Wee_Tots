@@ -9,14 +9,13 @@
     background-image: url("./images/forest.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
 }
 
 .colors-page {
     background-image: url("./images/rainbow.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 .shapes-page {
@@ -26,11 +25,16 @@
     height: 100%;
 }
 
+.game-div {
+    height: 80vh;
+    
+}
+
 h1 {
     display: flex;
     justify-content: center;
-    font-family: 'Concert One', cursive;
-    font-size: 70px; 
+    font-family: 'Concert One', cursive, sans-serif;
+    font-size: 3em; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: red;
@@ -38,11 +42,21 @@ h1 {
     margin-bottom: 5px;
 }
 
-h2 {
+h3 {
     display: flex;
     justify-content: center;
-    font-family: 'Concert One', cursive;
-    font-size: 70px;
+    font-family: 'Concert One', cursive, sans-serif;
+    font-size: 3em; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: blue;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    font-family: 'Concert One', cursive, sans-serif;
+    font-size: 3em;
     color: rgb(21, 19, 141);
     margin-top: 0px; 
 }
@@ -50,10 +64,9 @@ h2 {
 .wrong {
     display: flex;
     justify-content: center;
-    font-family: 'Concert One', cursive;
-    font-size: 70px;
+    font-family: 'Concert One', cursive, sans-serif;
+    font-size: 3em;
     color: red;
-    margin-top: 0px; 
 }
 
 .col-md-4 {
@@ -74,9 +87,9 @@ h2 {
 
 .btn {
     /* position: absolute; */
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sniglet', cursive, sans-serif;
     color: gold;
-    font-size: 60px;
+    font-size: 3em;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     background: transparent;
@@ -90,24 +103,40 @@ h2 {
     color: red
 } 
 
+.home-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .button {
     margin-top: 45%;
 }
 
-#start-btn {
+.start-btn {
+    
     justify-content: center;
-   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    height: 70vh;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* margin: 0; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
 } 
 
-.color {
-    -webkit-filter: drop-shadow(5px 5px 5px #353434);
-        filter: drop-shadow(5px 5px 5px #353434);
+.colors {
+    font-size: 2em;
+    -webkit-filter: drop-shadow(2px 2px 2px #1f1d1d);
+        filter: drop-shadow(2px 2px 2px #1f1d1d);
 }
 
-.row-2 {
-    margin-top: 10%;
+.grow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition-duration: .3s;
 }
+
+/* .row-2 {
+    margin-top: 10%;
+} */

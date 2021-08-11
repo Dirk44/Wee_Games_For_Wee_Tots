@@ -78,6 +78,7 @@ function startGame() {
 
 function nextInstruction() {
     showInstruction(randomInstruction[randomInstructionIndex]);
+    instructionDiv.classList = "instructions";
 };
 
 function showInstruction(instructions) {
@@ -98,7 +99,7 @@ startBtn.addEventListener("click", () => {
     // showInstruction();
 });
 
-/* clicking on a color*/
+/* clicking on a color */
 
 colorsGame.addEventListener("click", (e) => {
     console.log(e.target);
@@ -112,9 +113,11 @@ colorsGame.addEventListener("click", (e) => {
 
         /* wrong answer */
     } else {
-        incorrect.classList.remove("hide");
+        instructionDiv.classList = "wrong";
+        instructionDiv.innerHTML = "Sorry try again!";
+        // incorrect.classList.remove("hide");
         // randomInstructionIndex = randomInstructionIndex - 1
-        clearTimeout(nextInstruction(), instructionDiv.classList.add("hide"));
+        // clearTimeout(nextInstruction(), instructionDiv.classList.add("hide"));
     }
 
     if (randomInstructionIndex >= 8) {
@@ -128,8 +131,8 @@ colorsGame.addEventListener("click", (e) => {
 
     } else {
         setTimeout(function () {
-            incorrect.classList.add("hide");
-            instructionDiv.classList.remove("hide");
+            // incorrect.classList.add("hide");         
+            instructionDiv.classList.remove("hide");          
             nextInstruction();
         }, 1000)
 
