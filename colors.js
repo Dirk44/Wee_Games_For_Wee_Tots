@@ -18,55 +18,47 @@ let instructionDiv = document.getElementById("instruction");
 
 let instructions = [{
     instruction: "Touch the color Purple!",
-    correct: purple,
-    wrong: false
+    correct: purple,   
 },
 
 {
     instruction: "Touch the color Green!",
     correct: green,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Black!",
     correct: black,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Yellow!",
     correct: yellow,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Blue!",
     correct: blue,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Red!",
     correct: red,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Pink!",
     correct: pink,
-    wrong: false
 },
 
 {
     instruction: "Touch the color Orange!",
     correct: orange,
-    wrong: false
 },
 ];
 
 
-
+   /* Game Start */
 
 function startGame() {
     colorsGame.classList.remove("hide");
@@ -86,12 +78,7 @@ function showInstruction(instructions) {
     instructionDiv.innerHTML = instructions.instruction;
 };
 
-function hidePrompt() {
-
-}
-
-
-/* events */
+   /* events */
 
 startBtn.addEventListener("click", () => {
     randomInstructionIndex = 0;
@@ -120,6 +107,7 @@ colorsGame.addEventListener("click", (e) => {
         // clearTimeout(nextInstruction(), instructionDiv.classList.add("hide"));
     }
 
+        /* end of game */
     if (randomInstructionIndex >= 8) {
         instructionDiv.innerHTML = "Correct! You touched all of the colors!"
         setTimeout(function () {

@@ -125,7 +125,7 @@ h3 {
     /* transform: translate(-50%, -50%); */
 } 
 
-.color {
+.colors, .color {
     font-size: 2em;
     -webkit-filter: drop-shadow(5px 5px 5px #1f1d1d);
         filter: drop-shadow(5px 5px 5px #1f1d1d);
