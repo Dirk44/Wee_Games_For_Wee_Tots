@@ -125,10 +125,10 @@ h3 {
     /* transform: translate(-50%, -50%); */
 } 
 
-.colors {
+.color {
     font-size: 2em;
-    -webkit-filter: drop-shadow(2px 2px 2px #1f1d1d);
-        filter: drop-shadow(2px 2px 2px #1f1d1d);
+    -webkit-filter: drop-shadow(5px 5px 5px #1f1d1d);
+        filter: drop-shadow(5px 5px 5px #1f1d1d);
 }
 
 .grow:hover {
